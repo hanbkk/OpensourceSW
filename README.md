@@ -64,6 +64,18 @@
 #### - 프로세스에 시그널을 보내는 명령어이지만 대개 프로세스를 죽일 때 사용
 ##### - 사용방법 : 터미널에 접속해 'kill [options] <pid>'를 사용해 시그널을 보내거나 'kill [pid]' 죽이려는 프로세스의 pid를 넣어 프로세스를 죽인다
 
-
-
-
+### kill 옵션
+| 옵션 | 내용 |
+| --- | --- |
+| - s | default 시그널이 아닌 다른 시그널을 보냄 |
+| - ㅣ | 지원하는 시그널의 목록을 확인 |
+  
+### 주요 시그널
+| 시그널 | 영어 | 설명 |
+| ---- | ---- | ---- |
+| SIGHUP | Hang Up | 세션이 종료될 때 시스템이 내리는 시그널 |
+| SIGINT | Interrupt | Ctil + C, 종료 요청 시그널 |
+| SIGKILL | Kill | 강제 종료 시그널 |
+| SIGSEGV | Segment Violation | 메모리 침범이 일어날 때 시스템이 보내는 시그널 |
+| SIGTERM | Terminate | 기본 값, 종료 요청 시그널 |
+| SIGTSTP | Temporary Stop | Ctrl + Z 일지 중지 요청 시그널 |
